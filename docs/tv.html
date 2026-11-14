@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- https://kosmovpn.github.io/kosmovpn/tv.html#<ip>:<port>/<token> — what the QR code of the KosmoVPN TV app opens
+     on a phone. It only hands what follows # over to the KosmoVPN app on that phone (kosmovpn://tv/…), which then
+     sends its subscription to the TV over the home network. What follows # stays in the browser: it is not sent
+     to any server. Served by GitHub Pages from this repository's docs/ folder. -->
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>KosmoVPN на телевизоре</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+         background: #0a0f24; color: #e8ecff; font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 22em; padding: 24px; text-align: center; }
+  h1 { font-size: 22px; margin: 0 0 12px; }
+  p { margin: 0 0 16px; color: #aab3d9; }
+  a.b { display: block; padding: 14px; border-radius: 14px; background: #f4d573; color: #0a0f24;
+        font-weight: 700; text-decoration: none; margin-bottom: 16px; }
+  a { color: #f4d573; }
+</style>
+<main>
+  <h1>KosmoVPN на телевизоре</h1>
+  <div id="ok" hidden>
+    <p>Передайте подписку с телефона на телевизор. Оба устройства должны быть в одной сети Wi-Fi.</p>
+    <a class="b" id="go" href="#">Открыть в приложении KosmoVPN</a>
+    <p>Кнопка не работает? На телефоне нужно приложение KosmoVPN для Android версии 1.27 или новее:
+      <a href="https://github.com/KosmoVPN/kosmovpn/blob/main/README.ru.md">скачать</a>.</p>
+  </div>
+  <p id="bad" hidden>Откройте эту страницу, наведя камеру телефона на QR-код в приложении KosmoVPN на телевизоре.</p>
+</main>
+<script>
+  // the same shape the app accepts (M.Auto.tvAt); anything else is not turned into a link
+  var at = location.hash.slice(1), fine = /^\d{1,3}(\.\d{1,3}){3}:\d{1,5}\/[0-9a-f]{16}$/.test(at);
+  document.getElementById(fine ? "ok" : "bad").hidden = false;
+  if (fine) {
+    document.getElementById("go").href = "kosmovpn://tv/" + at;
+    location.href = "kosmovpn://tv/" + at; // straight to the app where the browser lets a page do that
+  }
+</script>
+</html>
