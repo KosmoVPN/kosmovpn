@@ -8,8 +8,8 @@ KosmoVPN apps for phones, TVs and computers. You need a subscription: [kosmovpn.
 
 | System | File |
 |---|---|
-| **Android** 7.0+ phones and tablets (arm64) | [KosmoVPN-android.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android.apk) |
-| **Android TV** and TV boxes, Android 7.0+ (32-bit ARM) — beta | [KosmoVPN-android-tv.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android-tv.apk) |
+| **Android** 7.1+ phones and tablets (arm64) | [KosmoVPN-android.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android.apk) |
+| **Android TV** and TV boxes, Android 7.1+ (32-bit ARM) — beta | [KosmoVPN-android-tv.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android-tv.apk) |
 | **Windows** 10 / 11 (64-bit) | [KosmoVPN-windows.exe](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-windows.exe) |
 | **macOS**, Apple Silicon — beta | [kosmovpn-macos-arm64](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/kosmovpn-macos-arm64) |
 | **macOS**, Intel — beta | [kosmovpn-macos-intel](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/kosmovpn-macos-intel) |

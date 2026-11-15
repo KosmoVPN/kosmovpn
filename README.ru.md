@@ -8,8 +8,8 @@
 
 | Система | Файл |
 |---|---|
-| **Android** 7.0 и новее, телефоны и планшеты (arm64) | [KosmoVPN-android.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android.apk) |
-| **Android TV** и ТВ-приставки, Android 7.0 и новее (32-бит ARM) — бета | [KosmoVPN-android-tv.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android-tv.apk) |
+| **Android** 7.1 и новее, телефоны и планшеты (arm64) | [KosmoVPN-android.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android.apk) |
+| **Android TV** и ТВ-приставки, Android 7.1 и новее (32-бит ARM) — бета | [KosmoVPN-android-tv.apk](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-android-tv.apk) |
 | **Windows** 10 / 11 (64-бит) | [KosmoVPN-windows.exe](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/KosmoVPN-windows.exe) |
 | **macOS**, Apple Silicon — бета | [kosmovpn-macos-arm64](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/kosmovpn-macos-arm64) |
 | **macOS**, Intel — бета | [kosmovpn-macos-intel](https://github.com/KosmoVPN/kosmovpn/releases/latest/download/kosmovpn-macos-intel) |
