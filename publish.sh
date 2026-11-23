@@ -39,4 +39,9 @@ sed 1,2d "$d/plan" | tr -d '\r' | while read -r name url sha; do
 done
 set -- $(sed 1,2d "$d/plan" | tr -d '\r' | while read -r name _; do echo "$d/$name"; done)
 [ $# -ge 7 ] || { echo "only $# files" >&2; exit 1; }
+# ponytail: the Windows installer (the README's link) is not on /dl yet: it was built and attached
+# by hand, so it is carried over from the latest release as it is. Upgrade: publish it on /dl
+# with desktop.json and take it from there like the rest. Until /dl has desktop 0.3,
+# KosmoVPN-windows.exe from /dl is the older 0.2.2 one.
+gh release download -R "$REPO" -p KosmoVPN-windows.msi -D "$d" && set -- "$@" "$d/KosmoVPN-windows.msi"
 gh release create "$tag" -R "$REPO" --title "$title" --notes-file "$d/notes.md" --latest "$@"
